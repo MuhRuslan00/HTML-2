@@ -3,11 +3,10 @@
     flex-direction: column;
     margin: 0;
 }
+
 .page__color {
     background-color: #F6F2F2;
 }
-
-/* Popup-menu__button */
 
 /* Header */
 .header {
@@ -22,13 +21,14 @@
     margin: 28px auto;
     margin-bottom: 0;
 }
-.header-navigation{
+
+.header-navigation {
     display: flex;
     flex-wrap: wrap;
 }
 
-.menu{
-display: flex;
+.menu {
+    display: flex;
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
@@ -150,7 +150,7 @@ li {
     background-color: #942020;
 }
 
-.container__video {
+.video {
     position: relative;
     width: 550px;
     height: 356px;
@@ -199,7 +199,6 @@ li {
     height: 56px;
     border-radius: 5px;
     margin-top: 64px;
-
 }
 
 .button_white:hover {
@@ -211,6 +210,7 @@ li {
 
 }
 
+/* 2 right part */
 .providing__blocks {
     flex: 1 1 488px;
     max-width: 620px;
@@ -265,7 +265,6 @@ li {
 }
 
 /* Page 3 */
-
 .feature {
     padding-top: 100px;
     padding-bottom: 52px;
@@ -384,7 +383,6 @@ li {
     height: 460px;
     margin-right: 40px;
     object-fit: cover;
-
 }
 
 .team__mark-waugh {
@@ -489,7 +487,6 @@ li {
 
 .member__photo:hover {
     color: #f5f0f0;
-
 }
 
 /* 4 page */
@@ -550,9 +547,9 @@ li {
 
 .button__submit {
     font-family: 'Open Sans';
-font-weight: 700;
-font-size: 18px;
-line-height: 34px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 34px;
     text-transform: uppercase;
     margin-left: 10px;
     min-height: 100%;
@@ -573,7 +570,7 @@ line-height: 34px;
     background-color: #942020;
 }
 
-/* <!-- 6 page Get in touch section--> */
+/* 6 page Get in touch section */
 .feedback {
     column-gap: 108px;
     grid-column: 2 / 3;
@@ -605,7 +602,6 @@ feedback__grid::after {
     line-height: 28px;
     margin: 0;
     margin-bottom: 26px;
-
 }
 
 .feedback__text {
@@ -702,6 +698,8 @@ feedback__grid::after {
 .feedback__button:active {
     background-color: #942020;
 }
+
+/* contact info */
 .contacts {
     box-sizing: border-box;
     position: relative;
@@ -765,18 +763,15 @@ feedback__grid::after {
 .footer__link>li {
     display: inline-block;
     padding-right: 18px;
-
 }
 
 .footer__link-a:hover {
     cursor: pointer;
     background-color: #000000;
     min-height: 90px;
-
 }
 
 /* responsive 1286px*/
-
 @media screen and (max-width: 1286px) {
     .container {
         flex-wrap: nowrap;
@@ -796,7 +791,7 @@ feedback__grid::after {
     .feedback__item {
         display: flex;
         flex-wrap: wrap;
-
+        align-items: center;
     }
 
     .contacts {
@@ -815,7 +810,6 @@ feedback__grid::after {
 
     .feedback {
         flex-wrap: wrap;
-
     }
 
     .grid {
@@ -886,7 +880,6 @@ feedback__grid::after {
 @media screen and (max-width: 760px) {
     .subscribe__form {
         width: 100%;
-
     }
 
     .input {
@@ -910,9 +903,34 @@ feedback__grid::after {
     .content__heading {
         font-size: 40px;
     }
+    .text__heading{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+    }
+    .providing__blocks{
+        display: flex;
+        justify-content: center;
+        text-align: center;  
+    }
+    .feature__link {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .feedback__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-
-.popup-menu__button{
+.popup-menu__button {
     z-index: 1;
     display: none;
     padding: 0;
@@ -926,28 +944,31 @@ feedback__grid::after {
 
 /* скрыть ненужные элементы */
 @media screen and (max-width: 600px) {
- .popup-menu__button {
-    display: block;   
- } 
- .header__menu{
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
- }
+    .popup-menu__button {
+        display: block;
+    }
+
+    .header__menu {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
 
 }
-.popup-menu{
+
+.popup-menu {
     position: relative;
     align-self: center;
     display: flex;
     justify-content: center;
-  }
-  .popup-menu__list{
+}
+
+.popup-menu__list {
     visibility: visible;
     position: absolute;
     bottom: 0;
@@ -963,32 +984,36 @@ feedback__grid::after {
     margin: 0;
     background-color: #2D2D2D;
     transition: visibility, transform 1s, 1s ease-in-out;
-  }  
-@media screen and (min-width: 600px){
-    .popup-menu__list{
-       visibility: hidden; 
+}
+
+@media screen and (min-width: 600px) {
+    .popup-menu__list {
+        visibility: hidden;
     }
 }
-   .hide-popup{
+
+.hide-popup {
     transform: translateY(-50px);
     z-index: -1;
     visibility: hidden;
-   } 
-   .popup-menu__item{
+}
+
+.popup-menu__item {
     display: flex;
     align-items: stretch;
     justify-content: center;
     min-height: 90px;
-   }
+}
 
-   .popup-menu__item:hover{
+.popup-menu__item:hover {
     background-color: #FF3B3B;
-   }
-   .popup-menu__link{
+}
+
+.popup-menu__link {
     font-family: 'Open Sans';
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
     display: flex;
     align-items: center;
     padding: 0 30px;
@@ -997,5 +1022,4 @@ line-height: 24px;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-   }
-    
+}
