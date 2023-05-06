@@ -485,7 +485,6 @@ li {
     color: #f5f0f0;
 }
 
-/* 4 page */
 .section__disign {
     padding-bottom: 110px;
     background-color: #2D2D2D;
@@ -566,7 +565,7 @@ li {
     background-color: #942020;
 }
 
-/* 6 page Get in touch section */
+/* 5 page*/
 .feedback {
     column-gap: 108px;
     grid-column: 2 / 3;
