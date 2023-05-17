@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <title>Reclama syte</title>
+    <script async src="./popup.js"></script>
+</head>
+<body class="page">
+    <header class="header">
+        <img class="logo" src="./img/logo.png" alt="picture">
+       <ul class="header__menu">
+        <li class="menu-item"><a class="header__menu-link active-link" href="#">Главная</a></li>
+        <li class="menu-item"><a class="header__menu-link" href="./pages/students.html"> Студенты </a></li>
+        <li class="menu-item"><a class="header__menu-link" href="./pages/about.html"> О курсе </a></li>
+        <li class="menu-item"><a class="header__menu-link" href="./pages/contacts.html"> Контакты </a></li>
+        </ul>
+        <button type="button" class="login__button">Войти</button>
+        <div class="login-popup">
+            <img class="popup-close" src="./img/close.png" alt="close">
+            <form class="login-form">
+                <h2 class="login-heading">Войти на сайт</h2>
+                <input class="login-input" name="login" type="text" placeholder="Логин" required>
+                <input class="login-password" name="login" type="text" placeholder="Пароль" required>
+                <button class="popup-button" type="submit">Войти</button>
+            </form>
+        </div>
+        </header>
+    <main class="main">
+        <h1 class="main__heading">Добро пожаловать на курс “Создание веб-сайтов (HTML, CSS)”!</h1>
+        <img class="photo" src="./img/rabfoto.svg" alt="photo">
+        <h2 class="text__heading">Для кого этот курс</h2>
+        <div class="intro-wrapper">
+        <p class="intro__text">Этот курс рассчитан на новичков, которые только начинают знакомство с 
+        веб-разработкой. В начале курса вы узнаете о том, как устроен Интернет и
+        веб-сайты. 
+        Для обучения необходимо только владеть компьютерной грамотностью
+        (пользоваться браузером, создавать папки и файлы, устанавливать программы).</p>
+        <div class="intro-aside">
+         <div class="blockquote">&#10077;Учимся вместе!&#10078;</div>   
+        </div>
+     </div>
+        <h2 class="text__heading">Чему вы научитесь</h2>
+        <p class="intro__text">На этом курсе вы узнаете, как устроены веб-сайты и как создавать их с нуля. 
+        Изучите основы языков <strong>HTML</strong> , <strong>CSS</strong> и немного JavaScript. Мы вместе сверстаем сайт 
+        нашей группы по этому макету. А затем вы <em>сами </em> сверстаете свои личные странички 
+        в качестве домашнего задания и мы выложим все это на сервер.</p>
+
+    </main>
+    <footer class="footer">
+        <p class="copyright"> 2022 &copy; <a class=innop-link">Учебный центр</a></p>
+    </footer>
+    
+</body>
+</html>
